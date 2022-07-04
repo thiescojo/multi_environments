@@ -21,7 +21,6 @@ jobs:
       run: |
         echo "I am running a job in the QA enviornment"
       
-      
   PROD_env:
     runs-on: ubuntu-latest
     environment: PROD
