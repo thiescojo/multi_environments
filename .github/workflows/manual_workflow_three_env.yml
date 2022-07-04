@@ -1,34 +1,34 @@
 name: manual_workflow_in_three_env
 on:
-worflow_dispatch:
+  workflow_dispatch:
 jobs:
   DEV_env:
     runs-on: ubuntu-latest
     environment: DEV
-  steps:
+    steps:
     - uses: actions/checkout@v2
     - name: Run a script
       run: |
-      echo "I am running a job in the DEV enviornment"
+        echo "I am running a job in the DEV enviornment"
     
   QA_env:
     runs-on: ubuntu-latest
     environment: QA
     needs: DEV_env
-  steps:
+    steps:
     - uses: actions/checkout@v2
     - name: Run a script
       run: |
-      echo "I am running a job in the QA enviornment"
+        echo "I am running a job in the QA enviornment"
       
       
   PROD_env:
     runs-on: ubuntu-latest
     environment: PROD
     needs: QA_env
-  steps:
+    steps:
     - uses: actions/checkout@v2
     - name: Run a script
       run: |
-      echo "I am running a job in the PROD enviornment"      
+        echo "I am running a job in the PROD enviornment"      
       
