@@ -8,8 +8,8 @@ workflow_dispatch:
     required: true
       
 jobs:
-name: greeting
+  name: greeting
   runs-on: ubuntu-latest
   steps:
-    - name: send greetings
+  - name: send greetings
       run: echo "Hello ${{ github.event.inputs.name }}"
