@@ -29,5 +29,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Run a script
       run: |
-        echo "I am running a job in the PROD enviornment"      
+        echo "I am running a job in the PROD enviornment, need manual approval before deployment"      
       
