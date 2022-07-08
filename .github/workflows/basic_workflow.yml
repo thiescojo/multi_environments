@@ -1,7 +1,8 @@
 name: Demo 1 basic workflow
 on:
   #workflow_dispatch:
-  push: [main]
+  push: 
+    branch: [main]
     inputs:
       name:
       description: 'person to greet '
