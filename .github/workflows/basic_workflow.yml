@@ -9,7 +9,7 @@ workflow_dispatch:
       
 jobs:
   name: greeting
-   runs-on: ubuntu-latest
-   steps:
+  runs-on: ubuntu-latest
+  steps:
    - name: send greetings
      run: echo "Hello ${{ github.event.inputs.name }}"
