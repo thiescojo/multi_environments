@@ -1,11 +1,11 @@
 name: Demo 1 basic workflow
 on:
-  workflow_dispatch:
-    inputs:
-      name:
-      description: 'person to greet '
-      default: 'world'
-      required: true
+workflow_dispatch:
+  inputs:
+    name:
+    description: 'person to greet '
+    default: 'world'
+    required: true
       
 jobs:
   name: greeting
