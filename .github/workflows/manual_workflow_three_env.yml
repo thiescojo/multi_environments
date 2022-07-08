@@ -1,5 +1,9 @@
-name: manual_workflow_in_three_env
+name: three_env_CI/CD
 on:
+  push:
+    branches: [main]
+  pull_request: 
+    branches: [main]
   workflow_dispatch:
 jobs:
   DEV_env:
